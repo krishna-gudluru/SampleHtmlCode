@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>HTML5/CSS3 Sample Page</title>
+    <meta charset="utf-8" />
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+
+    <script type="text/javascript">
+        function firstpost() {
+            alert(document.getElementById('post1').innerHTML);
+        }
+        function secondpost() {
+            alert(document.getElementById('post2').innerHTML);
+        }
+        function date() {
+            var dt = new Date();
+            document.Write(dt.getDate() + '/' + dt.getMonth()+1 + '/' + dt.getYear());
+        }
+    </script>
+</head>
+
+<body class="body">
+    <header class="mainHeader">
+        <img src="Images/F1.jpg" alt="F1"/>
+        <nav><ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>   
+            <li><a href="contact.html">Contact</a></li>
+        </ul></nav>
+    </header>
+
+    <div class="mainContent">
+        <div class="content">
+            <article class="topContent">
+                <header>
+                    <h2><a href="javascript:firstpost();" id="post1" title="First Post"><b>Race - Hamilton back in title hunt with Silverstone win</b></a></h2>
+                </header>
+                <footer>
+                    <p class="post-info">Date Posted: 7/07/2014.</p>
+                </footer>
+
+                <content>
+                    <p>After a difficult day on Saturday in which he qualified a disappointing sixth on the grid, Lewis Hamilton’s luck turned on Sunday as he fought his way up to second before inheriting the lead from team mate Nico Rosberg when the German hit gearbox difficulties on the 47th lap. </p>
+                </content>
+            </article>
+
+            <article class="bottomContent">
+                <header>
+                    <h2><a href="javascript:secondpost();" id="post2" title="Second Post"><b>Gutierrez penalized for Maldonado collision</b></a></h2>
+                </header>
+                <footer>
+                    <p class="post-info">Date Posted: 7/07/2014.</p>
+                </footer>
+
+                <content>
+                    <p>Sauber’s Esteban Gutierrez will drop three places on the grid at the next round in Germany after Silverstone stewards decided he was ‘predominantly at fault’ for a coming-together with Lotus’s Pastor Maldonado during Sunday’s 2014 Formula 1 Santander British Grand Prix.</p>
+
+                    <p>Maldonado’s car was launched into the air in spectacular fashion after Gutierrez made an ambitious passing attempt on the Venezuelan down the inside at Vale, less than 10 laps into the race.</p>
+
+                    <p>Gutierrez’s afternoon ended soon after when he went off into the gravel with accident damage. Maldonado was able to continue, but ultimately retired after 49 laps with technical problems and was classified 17th. </p>
+                </content>
+            </article>
+
+        </div>
+    </div>
+
+    <aside class="top-sidebar">
+        <article>
+            <h2><b>Last Race</b></h2>
+            <p><b>Austria</b><br />
+01	 Nico Rosberg	1:27:54.976<br />
+02	 Lewis Hamilton	+1.9 secs<br />
+03	 Valtteri Bottas	+8.1 secs<br />
+</p>
+        </article>
+    </aside>
+    <aside class="middle-sidebar">
+        <article>
+            <h2><b>Fastest Lap</b></h2>
+            <p>Sergio Perez	1:12.142</p>
+        </article>
+    </aside>
+    <aside class="bottom-sidebar">
+        <article>
+            <h2><b>Pole Position</b></h2>
+            <p>Felipe Massa	1:08.759</p>
+        </article>
+    </aside>
+
+    <footer class="mainFooter">
+        <p>Copyright &copy; Krishna 2014.</p>
+    </footer>
+
+</body>
+
+</html>
